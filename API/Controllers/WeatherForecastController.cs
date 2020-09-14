@@ -8,6 +8,7 @@ using Microsoft.Extensions.Logging;
 namespace API.Controllers
 {
     [ApiController]
+    [ApiExplorerSettings(IgnoreApi = true)] // un useful cintroller so we ignore it in swagger
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
     {
